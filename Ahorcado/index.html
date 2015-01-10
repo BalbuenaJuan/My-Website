@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ahorcado canvas</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="ahorcado.js"></script>
+</head>
+<body style="background-color:#F00">
+	<h3 class="text-body-head">
+	Elige una letra:	
+	<input type="text" class="text" id="texto">
+	<input type="button" class="boton" value="Tócame!!!" id="boton">
+	</h3>
+	<h2 id="pista"class="inline">_ _</h2>
+	<h3 class="inline espacio text-body-head">Otra partida <span class="flechita">&#8594;</span></h3>
+	<input class="inline boton" id="otra"  type="button" value="Otra">
+	<br>
+	<canvas id="canvas" width="500" height="400"></canvas>
+	<script>
+		inicio();
+	</script>
+</body>
+</html>

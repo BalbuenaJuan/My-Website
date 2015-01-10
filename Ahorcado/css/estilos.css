@@ -1,0 +1,39 @@
+body
+{
+	background: #7BB2EE !important;
+	text-align: center;
+}
+
+.boton
+{
+	border-radius: 3px;
+	height: 25px;
+	outline: 0;
+}
+
+.espacio
+{
+	padding-left: 2em;
+}
+
+.flechita
+{
+	color: white;
+	font-size: 2em;
+}
+
+.inline
+{
+	display: inline-block;
+}
+
+.text
+{
+	border-radius: 3px;
+	height: 25px;
+}
+
+.text-body-head
+{
+	text-shadow: .5px 1px 1px #FFF5F5;
+}
