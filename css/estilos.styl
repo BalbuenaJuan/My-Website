@@ -2,6 +2,10 @@ background = #2BA8F7
 blanco = #fff
 color = #606060
 
+-moz-::selection
+  background #E0E0E0
+  color blanco
+
 ::selection
   background #E0E0E0
   color blanco
@@ -88,8 +92,6 @@ ul
 
 /* FIN DE TAGS HTML */
 
-.ancla-lista
-  display inline-block
 
 .article-webs
   text-align center
@@ -170,6 +172,16 @@ ul
 .header-habilidades
   border-bottom 1px solid darkgrey
   font-weight 400
+
+.header-yo:before
+  content "{ "
+  color #ffcb1f
+  font-size 1.1em
+
+.header-yo:after
+  content " }"
+  color #ffcb1f
+  font-size 1.1em
 
 .input
   border none
@@ -301,6 +313,10 @@ ul
   .conocimientos, .trabajo
     width 32%
 
+@media screen and (max-width: 988px)
+  .header
+    height auto
+
 @media screen and (max-width: 890px)
   .habilidades
     flex-wrap wrap
@@ -321,10 +337,10 @@ ul
   .lista
     word-spacing 2em
 
-@media screen and (max-width: 660px)
-  .header
-    height 440px
+  .lista-itemUno
+    padding-right 0
 
+@media screen and (max-width: 660px)
   .lista
     font-size .9em
     word-spacing .4em
@@ -332,6 +348,8 @@ ul
   .textos-header
     display block
     width 90%
+    margin 0 auto
+    padding 0
     text-align center
 
 @media screen and (max-width: 555px)
@@ -346,12 +364,18 @@ ul
     width 88%
 
   .header
-    height 460px
+    height 490px
+
+  .input
+    width 86%
 
   .lista
     font-size .9em
     margin 0
     padding 0
+
+  .mensaje
+    width 86%
 
   .nav
     height 25px
@@ -368,5 +392,8 @@ ul
     height 130px
 
 @media screen and (max-width: 355px)
+  .header
+    height 550px
+
   .last-juegos
     display block

@@ -127,33 +127,41 @@ $(document).ready(function(){
 			$(ids[i]).hide("slow");
 		}
 	}
-		$("#html").click( function(){
-			cerrarAnimaciones();
-			$(ids[0]).toggle("slow");
-		});
-		$("#css").click( function(){
-			cerrarAnimaciones();
-			$(ids[1]).toggle("slow");
-		});
-		$("#javascript").click(function(){
-			cerrarAnimaciones();
-			$(ids[2]).toggle("slow");
-		});
-		$("#stylus").click( function(){
-			cerrarAnimaciones();
-			$(ids[3]).toggle("slow");
-		});
-		$("#handlebars").click(function () {
-			cerrarAnimaciones();
-			$(ids[4]).toggle("slow");
-		});
-		$("#jquery").click( function(){
-			cerrarAnimaciones();
-			$(ids[5]).toggle("slow");
-		});//FIN DE TOGGLE HABILIDADES
+
+	$("#html").click( function(){
+		console.log("Funciona??");
+		cerrarAnimaciones();
+		$(ids[0]).show("slow");
+	});
+	$("#css").click( function(){
+		cerrarAnimaciones();
+		$(ids[1]).show("slow");
+	});
+	$("#javascript").click( function(){
+		cerrarAnimaciones();
+		$(ids[2]).show("slow");
+	});
+	$("#stylus").click( function(){
+		cerrarAnimaciones();
+		$(ids[3]).show("slow");
+	});
+	$("#handlebars").click( function () {
+		cerrarAnimaciones();
+		$(ids[4]).show("slow");
+	});
+	$("#jquery").click( function(){
+		cerrarAnimaciones();
+		$(ids[5]).show("slow");
+	});//FIN DE TOGGLE HABILIDADES
 
 	name.click( function(){
-		$("#email").fadeIn(1000);
+		$("#email").show(600);
 	});//FIN DE FADEIN FORMULARIO
+
+	/*var tiempo = new Date();
+	var mes = getMonth();
+	var ano = getFullYear();*/
+
+
 });//FIN DE READY
 
