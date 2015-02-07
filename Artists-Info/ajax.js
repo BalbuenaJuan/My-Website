@@ -17,7 +17,7 @@ function requestArtist(){
         // data: {artist: artistInput.val()},
         data: {
             artist: artistInput.val(),
-            api_key: '9046eef35739f8f2bfc2eb864029c081',
+            api_key: '26194823d341a4fa9162f1c24dfac318',
             format: 'json',
             method: 'artist.getInfo'
         },
@@ -37,7 +37,6 @@ function fillArtistInfo( jsonData ){
     html += '<h2>' + artist.name + '</h2>'
     html += '<figure><img src="' + artist.image[artist.image.length-1]['#text'] + '"></figure>'
     html += '<p class="bio">' + artist.bio.summary + '</p>'
-    html += '<p class="bio">' + artist.similar.artist[name] + '</p>
 
     resultOut.html( html )
 }

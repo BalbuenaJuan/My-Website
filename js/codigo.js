@@ -42,12 +42,12 @@ $(document).ready(function(){
 		boton.val('Enviando');
 
 	});// FIN DE CAMBIO DE TEXTO BOTON
-
-	message.on("focusout", function(){
+    message.on("focusout", function(){
 		if($(this).val() == ""){
-			message.css({"background": "#FFCECF",
-				"border": "2px solid #FF726C"});
-			for(var i = 0; i < message.length; i++){
+
+            for(var i = 0; i < message.length; i++){
+				message.css({"background": "#FFCECF",
+					"border": "2px solid #FF726C"});
 				$(".ok1").remove();
 				$(".cancel1").remove();
 				message.after('<img class="cancel1" src="img/redes/cancel.png" width="28" height="28">');
@@ -55,10 +55,9 @@ $(document).ready(function(){
 			}
 		}
 		else{
-			message.css({"background": "#C8FDD4",
-				"border": "2px solid #52FD8B"});
-
 			for(var i = 0; i < message.length; i++){
+				message.css({"background": "#C8FDD4",
+					"border": "2px solid #52FD8B"});
 				$(".cancel1").remove();
 				$(".ok1").remove();
 				message.after('<img class="ok1" src="img/redes/check.png" width="28" height="28">');
@@ -67,10 +66,10 @@ $(document).ready(function(){
 	});
 	email.on("focusout", function(){
 		if($(this).val() == "" || $("#email").val().indexOf("@") == -1 || $("#email").val().indexOf(".") == -1){
-			email.css({"background": "#FFCECF",
-				"border": "2px solid #FF726C"});
 
-			for(var i = 0; i < email.length; i++){
+            for(var i = 0; i < email.length; i++){
+				email.css({"background": "#FFCECF",
+					"border": "2px solid #FF726C"});
 				$(".ok2").remove();
 				$(".cancel2").remove();
 				email.after('<img class="cancel2" src="img/redes/cancel.png" width="28" height="28">');
@@ -79,10 +78,9 @@ $(document).ready(function(){
 
 		}
 		else{
-			email.css({"background": "#C8FDD4",
-				"border": "2px solid #52FD8B"});
-
 			for(var i = 0; i < email.length; i++){
+				email.css({"background": "#C8FDD4",
+					"border": "2px solid #52FD8B"});
 				$(".cancel2").remove();
 				$(".ok2").remove();
 				email.after('<img class="ok2" src="img/redes/check.png" width="28" height="28">');
@@ -91,10 +89,10 @@ $(document).ready(function(){
 	});
 	name.on("focusout", function(){
 		if($(this).val() == ""){
-			name.css({"background": "#FFCECF",
-				"border": "2px solid #FF726C"});
 
 			for( var i = 0; i < name.length; i++){
+				name.css({"background": "#FFCECF",
+					"border": "2px solid #FF726C"});
 				$(".ok3").remove();
 				$(".cancel3").remove();
 				name.after('<img class="cancel3" src="img/redes/cancel.png" width="28" height="28">');
@@ -102,10 +100,9 @@ $(document).ready(function(){
 			}
 		}
 		else{
-			name.css({"background": "#C8FDD4",
-				"border": "2px solid #52FD8B"});
-
 			for(var i = 0; i < name.length; i++){
+				name.css({"background": "#C8FDD4",
+					"border": "2px solid #52FD8B"});
 				$(".cancel3").remove();
 				$(".ok3").remove();
 				name.after('<img class="ok3" src="img/redes/check.png" width="28" height="28">');
@@ -118,7 +115,7 @@ $(document).ready(function(){
 		$("#contador").html( this.value + "€");
 	});
 
-	var ids = ["#animacion", "#animacion2", "#animacion3", "#animacion4", "#animacion5", "#animacion6"];
+	var ids = ["#animacion", "#animacion2", "#animacion3", "#animacion4", "#animacion5", "#animacion6", "#animacion7"];
 
 	function cerrarAnimaciones()
 	{
@@ -133,35 +130,39 @@ $(document).ready(function(){
 		cerrarAnimaciones();
 		$(ids[0]).show("slow");
 	});
+
 	$("#css").click( function(){
 		cerrarAnimaciones();
 		$(ids[1]).show("slow");
 	});
+
 	$("#javascript").click( function(){
 		cerrarAnimaciones();
 		$(ids[2]).show("slow");
 	});
+
 	$("#stylus").click( function(){
 		cerrarAnimaciones();
 		$(ids[3]).show("slow");
 	});
+
 	$("#handlebars").click( function () {
 		cerrarAnimaciones();
 		$(ids[4]).show("slow");
 	});
+
 	$("#jquery").click( function(){
 		cerrarAnimaciones();
 		$(ids[5]).show("slow");
-	});//FIN DE TOGGLE HABILIDADES
+	});
+
+    $("#balsamiq").click( function(){
+        cerrarAnimaciones();
+        $(ids[6]).show("slow");
+    });//FIN DE TOGGLE HABILIDADES]]
 
 	name.click( function(){
 		$("#email").show(600);
 	});//FIN DE FADEIN FORMULARIO
-
-	/*var tiempo = new Date();
-	var mes = getMonth();
-	var ano = getFullYear();*/
-
-
 });//FIN DE READY
 
