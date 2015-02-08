@@ -201,6 +201,7 @@ ul {
 .email-fail {
   display: none;
   color: #f00;
+  margin-bottom: 0;
 }
 .juegos {
   background: #ffcb1f;
@@ -264,6 +265,7 @@ display
 .message-fail {
   display: none;
   color: #f00;
+  margin-bottom: 0;
 }
 .nav {
   background: #fff;
@@ -297,6 +299,7 @@ display
 .text-fail {
   display: none;
   color: #f00;
+  margin-bottom: 0;
 }
 .text-habilidades {
   border-radius: 6px;

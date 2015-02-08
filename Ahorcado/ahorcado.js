@@ -123,7 +123,15 @@ function inicio()
 
 	o = document.getElementById("otra");
 
-	o.addEventListener("click", recargar)
+	o.addEventListener("click", recargar);
+
+    c.addEventListener("keyup", secondDisparo);
+
+    function secondDisparo( evt ){
+        if(evt.keyCode == 13){
+            agregarLetra();
+        }
+    }
 
 	x = numeroAleatorio(0,14);
 

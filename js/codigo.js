@@ -62,7 +62,9 @@ $(document).ready(function(){
 				$(".cancel1").remove();
 				$(".ok1").remove();
 				message.after('<img class="ok1" src="img/redes/check.png" width="28" height="28">');
-			}
+                $("#message-fail").fadeOut();
+
+            }
 		}
 	});
 	email.on("focusout", function(){
@@ -86,7 +88,8 @@ $(document).ready(function(){
 				$(".cancel2").remove();
 				$(".ok2").remove();
 				email.after('<img class="ok2" src="img/redes/check.png" width="28" height="28">');
-			}
+                $("#email-fail").fadeOut();
+            }
 		}
 	});
 	name.on("focusout", function(){
@@ -109,7 +112,8 @@ $(document).ready(function(){
 				$(".cancel3").remove();
 				$(".ok3").remove();
 				name.after('<img class="ok3" src="img/redes/check.png" width="28" height="28">');
-			}
+                $("#text-fail").fadeOut();
+            }
 		}
 	});//FIN VALIDACIÓN VISUAL EMAIL
 
