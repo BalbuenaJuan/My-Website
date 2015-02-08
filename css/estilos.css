@@ -198,6 +198,10 @@ ul {
 .email {
   display: none;
 }
+.email-fail {
+  display: none;
+  color: #f00;
+}
 .juegos {
   background: #ffcb1f;
   border-bottom: 3px solid #2f4f4f;
@@ -257,6 +261,10 @@ display
 .menu-fijo > .lista-menu {
   color: #fff;
 }
+.message-fail {
+  display: none;
+  color: #f00;
+}
 .nav {
   background: #fff;
   height: auto;
@@ -285,6 +293,10 @@ display
   font-family: 'Roboto';
   outline: 0;
   background: #fff;
+}
+.text-fail {
+  display: none;
+  color: #f00;
 }
 .text-habilidades {
   border-radius: 6px;

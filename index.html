@@ -124,14 +124,16 @@
         </a>
     </article>
     <form id="form" method="post" action="contacto.php">
-        <div id="respuesta"></div>
+        <p class="text-fail" id="text-fail">! Nombre incorrecto</p>
         <input type="text" class="input" id="name" name="nombre" placeholder="Escribe tu nombre" required>
         <br>
+        <p class="email-fail" id="email-fail">! Email incorrecto</p>
         <input name="email" id="email" class="input email" type="email" placeholder="Escribe tu Email" required/>
         <br>
         <label for="range" class="contador">Presupuesto:</label>
         <input class="contador range" type="range" name="range" required id="range" min="500" max="2500">
         <div id="contador"></div>
+        <p class="message-fail" id="message-fail">! Mensaje incorrecto</p>
         <textarea id="message" class="mensaje" name="mensaje" cols="30" rows="10"  required placeholder="Escribe aquí el contenido de tu mensaje"></textarea>
         <br>
         <input name="submit" id="submit" class="submit" type="submit" value="Enviar">

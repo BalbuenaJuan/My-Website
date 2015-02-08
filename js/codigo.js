@@ -52,6 +52,7 @@ $(document).ready(function(){
 				$(".cancel1").remove();
 				message.after('<img class="cancel1" src="img/redes/cancel.png" width="28" height="28">');
 				message.attr("placeholder", "Debes escribir un mensaje");
+                $("#message-fail").show();
 			}
 		}
 		else{
@@ -74,6 +75,7 @@ $(document).ready(function(){
 				$(".cancel2").remove();
 				email.after('<img class="cancel2" src="img/redes/cancel.png" width="28" height="28">');
 				email.attr("placeholder", "Debes escribir tu email");
+                $("#email-fail").show();
 			}
 
 		}
@@ -97,6 +99,7 @@ $(document).ready(function(){
 				$(".cancel3").remove();
 				name.after('<img class="cancel3" src="img/redes/cancel.png" width="28" height="28">');
 				name.attr("placeholder", "Debes escribir tu nombre");
+                $("#text-fail").show();
 			}
 		}
 		else{
