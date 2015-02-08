@@ -6,9 +6,19 @@ body {
   height: 100px;
   width: 100px;
 }
+.email-fail {
+  display: none;
+  color: #f00;
+}
 .figcaption {
   padding-left: 0.7em;
   text-align: center;
+}
+.header {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 4em;
 }
 .licencia {
   display: block;
@@ -17,11 +27,9 @@ body {
   padding: 0;
   margin: 0;
 }
-.header {
-  font-size: 48px;
-  text-align: center;
-  margin: 0 auto;
-  padding-right: 4em;
+.message-fail {
+  display: none;
+  color: #f00;
 }
 .text-header {
   text-align: center;
@@ -51,6 +59,10 @@ body {
 }
 .range {
   width: 70%;
+}
+.text-fail {
+  display: none;
+  color: #f00;
 }
 .validate-contact {
   font-family: 'Roboto';
