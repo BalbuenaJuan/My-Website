@@ -123,6 +123,8 @@ ul {
 }
 .cursos {
   background: #acf0ff;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
   justify-content: center;
   margin-top: 2em;
@@ -138,6 +140,8 @@ ul {
 }
 .habilidades {
   background: #acf0ff;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
   justify-content: center;
 }
@@ -350,9 +354,12 @@ display
 }
 @media screen and (max-width: 890px) {
   .habilidades {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
   }
   .cursos {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .conocimientos {
