@@ -6,7 +6,21 @@ var calcular = $("#calcular");
 var resultado = $("#resultado");
 var calculo = $("#Opciones");
 
-calcular.on("click", function(){
+$("#numero1").on("keyup", secondDisparo);
+function secondDisparo( evt ){
+    if(evt.keyCode == 13){
+        magia();
+    }
+}
+$("#numero2").on("keyup", tercerDisparo);
+function tercerDisparo( evt ){
+    if(evt.keyCode == 13){
+        magia();
+    }
+}
+
+calcular.on("click", magia);
+function magia(){
     var numero1 =  parseInt($("#numero1").val());
     var numero2 = parseInt($("#numero2").val());
     var res;
@@ -29,5 +43,5 @@ calcular.on("click", function(){
         res = numero1 / numero2;
         resultado.html(res);
     }
-});
+}
 

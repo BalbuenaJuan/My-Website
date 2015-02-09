@@ -344,6 +344,9 @@ display
   .header-yo {
     margin-top: -0.1em;
   }
+  .lista-itemUno {
+    padding-right: 5em;
+  }
 }
 @media screen and (max-width: 890px) {
   .habilidades {
