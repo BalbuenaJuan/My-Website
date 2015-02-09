@@ -43,79 +43,90 @@ $(document).ready(function(){
 
 	});// FIN DE CAMBIO DE TEXTO BOTON
     message.on("focusout", function(){
-		if($(this).val() == ""){
+        if($(this).val() == ""){
 
             for(var i = 0; i < message.length; i++){
-				message.css({"background": "#FFCECF",
-					"border": "2px solid #FF726C"});
-				$(".ok1").remove();
-				$(".cancel1").remove();
-				message.after('<img class="cancel1" src="img/redes/cancel.png" width="28" height="28">');
-				message.attr("placeholder", "Debes escribir un mensaje");
-                $("#message-fail").show();
-			}
-		}
-		else{
-			for(var i = 0; i < message.length; i++){
-				message.css({"background": "#C8FDD4",
-					"border": "2px solid #52FD8B"});
-				$(".cancel1").remove();
-				$(".ok1").remove();
-				message.after('<img class="ok1" src="img/redes/check.png" width="28" height="28">');
-                $("#message-fail").fadeOut();
+                message.css({"background": "#FFCECF",
+                    "border": "2px solid #FF726C"});
+                $("#ok1").remove();
+                $("#cancel1").remove();
+                $("#bad-message").remove();
+                message.after('<img id="cancel1" src="img/redes/cancel.png" width="28" height="28">');
+                message.attr("placeholder", "You must write a message");
+                message.before('<p id="bad-message">! Mensaje incorrecto</p>');
+                $("#bad-message").css({"color": "red",
+                    "margin-bottom": "0"});
+            }
+        }
+        else{
+            for(var i = 0; i < message.length; i++){
+                message.css({"background": "#C8FDD4",
+                    "border": "2px solid #52FD8B"});
+                $("#cancel1").remove();
+                $("#ok1").remove();
+                message.after('<img id="ok1" src="img/redes/check.png" width="28" height="28">');
+                $("#bad-message").remove();
 
             }
-		}
-	});
-	email.on("focusout", function(){
-		if($(this).val() == "" || $("#email").val().indexOf("@") == -1 || $("#email").val().indexOf(".") == -1){
+        }
+    });
+    email.on("focusout", function(){
+        if($(this).val() == "" || $("#email").val().indexOf("@") == -1 || $("#email").val().indexOf(".") == -1){
 
             for(var i = 0; i < email.length; i++){
-				email.css({"background": "#FFCECF",
-					"border": "2px solid #FF726C"});
-				$(".ok2").remove();
-				$(".cancel2").remove();
-				email.after('<img class="cancel2" src="img/redes/cancel.png" width="28" height="28">');
-				email.attr("placeholder", "Debes escribir tu email");
-                $("#email-fail").show();
-			}
-
-		}
-		else{
-			for(var i = 0; i < email.length; i++){
-				email.css({"background": "#C8FDD4",
-					"border": "2px solid #52FD8B"});
-				$(".cancel2").remove();
-				$(".ok2").remove();
-				email.after('<img class="ok2" src="img/redes/check.png" width="28" height="28">');
-                $("#email-fail").fadeOut();
+                email.css({"background": "#FFCECF",
+                    "border": "2px solid #FF726C"});
+                $("#ok2").remove();
+                $("#cancel2").remove();
+                $("#bad-email").remove();
+                email.after('<img id="cancel2" src="img/redes/cancel.png" width="28" height="28">');
+                email.attr("placeholder", "You must write a email");
+                email.before('<p id="bad-email">! Email incorrecto</p>');
+                $("#bad-email").css({"color": "red",
+                    "margin-bottom": "0"});
             }
-		}
-	});
-	name.on("focusout", function(){
-		if($(this).val() == ""){
 
-			for( var i = 0; i < name.length; i++){
-				name.css({"background": "#FFCECF",
-					"border": "2px solid #FF726C"});
-				$(".ok3").remove();
-				$(".cancel3").remove();
-				name.after('<img class="cancel3" src="img/redes/cancel.png" width="28" height="28">');
-				name.attr("placeholder", "Debes escribir tu nombre");
-                $("#text-fail").show();
-			}
-		}
-		else{
-			for(var i = 0; i < name.length; i++){
-				name.css({"background": "#C8FDD4",
-					"border": "2px solid #52FD8B"});
-				$(".cancel3").remove();
-				$(".ok3").remove();
-				name.after('<img class="ok3" src="img/redes/check.png" width="28" height="28">');
-                $("#text-fail").fadeOut();
+        }
+        else{
+            for(var i = 0; i < email.length; i++){
+                email.css({"background": "#C8FDD4",
+                    "border": "2px solid #52FD8B"});
+                $("#cancel2").remove();
+                $("#ok2").remove();
+                $("#bad-email").remove();
+                email.after('<img id="ok2" src="img/redes/check.png" width="28" height="28">');
+                $("#bad-email").remove();
             }
-		}
-	});//FIN VALIDACIÓN VISUAL EMAIL
+        }
+    });
+    name.on("focusout", function(){
+        if($(this).val() == ""){
+
+            for( var i = 0; i < name.length; i++){
+                name.css({"background": "#FFCECF",
+                    "border": "2px solid #FF726C"});
+                $("#ok3").remove();
+                $("#cancel3").remove();
+                $("#bad-name").remove();
+                name.after('<img id="cancel3" src="img/redes/cancel.png" width="28" height="28">');
+                name.attr("placeholder", "You must write a name");
+                name.before('<p id="bad-name">! Nombre incorrecto </p>');
+                $("#bad-name").css({"color": "red",
+                    "margin-bottom": "0"});
+
+            }
+        }
+        else{
+            for(var i = 0; i < name.length; i++){
+                name.css({"background": "#C8FDD4",
+                    "border": "2px solid #52FD8B"});
+                $("#cancel3").remove();
+                $("#ok3").remove();
+                name.after('<img id="ok3" src="img/redes/check.png" width="28" height="28">');
+                $("#bad-name").remove();
+            }
+        }
+    });//FIN VALIDACIÓN VISUAL EMAIL
 
 
 	$("#range").change(function(){
