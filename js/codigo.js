@@ -52,7 +52,7 @@ $(document).ready(function(){
                 $("#cancel1").remove();
                 $("#bad-message").remove();
                 message.after('<img id="cancel1" src="img/redes/cancel.png" width="28" height="28">');
-                message.attr("placeholder", "You must write a message");
+                message.attr("placeholder", "Debes escribir un mensaje");
                 message.before('<p id="bad-message">! Mensaje incorrecto</p>');
                 $("#bad-message").css({"color": "red",
                     "margin-bottom": "0"});
@@ -80,7 +80,7 @@ $(document).ready(function(){
                 $("#cancel2").remove();
                 $("#bad-email").remove();
                 email.after('<img id="cancel2" src="img/redes/cancel.png" width="28" height="28">');
-                email.attr("placeholder", "You must write a email");
+                email.attr("placeholder", "Debes escribir tu email");
                 email.before('<p id="bad-email">! Email incorrecto</p>');
                 $("#bad-email").css({"color": "red",
                     "margin-bottom": "0"});
@@ -109,7 +109,7 @@ $(document).ready(function(){
                 $("#cancel3").remove();
                 $("#bad-name").remove();
                 name.after('<img id="cancel3" src="img/redes/cancel.png" width="28" height="28">');
-                name.attr("placeholder", "You must write a name");
+                name.attr("placeholder", "Debes escribir tu nombre");
                 name.before('<p id="bad-name">! Nombre incorrecto </p>');
                 $("#bad-name").css({"color": "red",
                     "margin-bottom": "0"});

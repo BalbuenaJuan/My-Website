@@ -126,6 +126,8 @@ ul {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
   margin-top: 2em;
 }
@@ -143,6 +145,8 @@ ul {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 }
 .header {
@@ -195,7 +199,7 @@ ul {
   height: 50px;
   font-family: 'Roboto';
   font-size: 1.2em;
-  margin-top: 1.5em;
+  margin-top: 1em;
   outline: 0;
   width: 90%;
 }
@@ -242,7 +246,7 @@ display
   border-radius: 6px;
   font-family: 'Roboto';
   font-size: 1.2em;
-  margin-top: 1.5em;
+  margin-top: 1em;
   outline: 0;
   width: 90%;
 }
@@ -330,13 +334,16 @@ display
 @media screen and (max-width: 1400px) {
   .conocimientos,
   .trabajo {
-    width: 32%;
+    width: 38%;
+  }
+  .lista-itemUno {
+    padding-right: 7em;
   }
   .textos-header {
     margin-left: 2em;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1164px) {
   .avatar,
   .blog {
     vertical-align: middle;
@@ -345,6 +352,10 @@ display
   .textos-header {
     vertical-align: top;
   }
+  .conocimientos,
+  .trabajo {
+    width: 43%;
+  }
   .header-yo {
     margin-top: -0.1em;
   }
@@ -352,7 +363,14 @@ display
     padding-right: 5em;
   }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1024px) {
+  .conocimientos,
+  .trabajo {
+    width: 48%;
+    margin: 2em 0.3em;
+  }
+}
+@media screen and (max-width: 985px) {
   .habilidades {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
