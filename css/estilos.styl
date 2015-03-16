@@ -1,6 +1,7 @@
-background = #2BA8F7
+background = #56737F
 blanco = #fff
 color = #606060
+sections = #ABE5FF
 
 /* FIN DE COLORES */
 
@@ -43,28 +44,27 @@ color = #606060
 .icon-check:before {
   content: "\f03a";
   color #7DE85E
-  font-size 1.15em
+  font-size 1.15rem
 }
 .icon-mark-github:before {
   content: "\f00a";
-  font-size 2em
+  font-size 2rem
 }
 .icon-quill:before {
   content: "\e907";
-  font-size 3em
+  font-size 3rem
 }
 
 a
   color #000
   text-decoration none
 
-a:hover, a:focus
-  color #000
+a:hover
   text-decoration none
 
 body
   color color
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', monospace;
   font-size 16px
   margin 0
   padding 0
@@ -76,11 +76,11 @@ footer
   overflow hidden
 
 form
-  background #424242
+  background #23637F
   color blanco
-  margin 2em auto
+  margin 2rem auto
   max-width 600px
-  padding 2em
+  padding 2rem
 
 li
   list-style none
@@ -117,11 +117,13 @@ ul
   color blanco
 
 .blanco:hover
-  oolor #000
+  oolor #ffcb1f
 
 .blog
   color blanco
 
+.blog:hover
+  color #ffcb1f
 
 .contador
  color blanco
@@ -129,19 +131,19 @@ ul
 .conocimientos
   background-color blanco
   border-top 5px solid background
-  margin  3em 0
-  padding 1em
+  margin  3rem 0
+  padding 1rem
   width 23%
 
 .cursos
-  background #ACF0FF
+  background sections
   display -webkit-flex
   display -ms-flex
   display flex
   -webkit-justify-content center
   -ms-justify-content center
   justify-content center
-  margin-top 2em
+  margin-top 2rem
 
 .font-light
   font-weight 300
@@ -149,11 +151,11 @@ ul
 .footer-subHeader
   color blanco
   display inline-block
-  margin-bottom 3em
+  margin-bottom 3rem
   text-align center
 
 .habilidades
-  background #ACF0FF
+  background sections
   display -webkit-flex
   display -ms-flex
   display flex
@@ -166,22 +168,22 @@ ul
   color blanco
   height auto
   text-align center
-  padding-top 1em
-  padding-bottom 1em
+  padding-top 1rem
+  padding-bottom 1rem
 
 .header-article-webs
-  margin-top 2em
+  margin-top 2rem
 
 .header-educacion
   text-align center
-  padding-bottom 1.5em
+  padding-bottom 1.5rem
 
 .header-Description
   font-weight 400
-  line-height 1.6em
+  line-height 1.3em
 
 .header-footer
-  padding-top 1.8em
+  padding-top 1.8rem
   text-align center
 
 .header-footer:after
@@ -197,12 +199,12 @@ ul
 .header-yo:before
   content "{ "
   color #ffcb1f
-  font-size 1.1em
+  font-size 2.1rem
 
 .header-yo:after
   content " }"
   color #ffcb1f
-  font-size 1.1em
+  font-size 2.1rem
 
 .input
   border none
@@ -210,8 +212,9 @@ ul
   display inline-block
   height 50px
   font-family 'Roboto'
-  font-size 1.2em
-  margin-top 1em
+  font-size 1.2rem
+  margin-top 1rem
+  padding 0 0 0 .6em
   outline 0
   width 90%
 
@@ -224,32 +227,36 @@ ul
   border-radius 5px
   color #000000
   font-size 18px
-  margin 1em auto
-  padding .5em
+  margin 1rem auto
+  padding .5rem
   max-width 150px
 
-.juegos:hover
+.juegos:hover, .juegos:focus
   font-size 16px
   height -10%
+  color #000
+
+.juegos::active
+  color  #000000
 
 .lista
   cursor pointer
   display inline-block
   text-align center
-  word-spacing 3em
+  word-spacing 3rem
   margin-bottom 0
   margin-top 0
   padding-bottom 0
   padding-top 0
   width 100%
   display
-.lista-itemUno
-  padding-right 9em
+.lista-itremUno
+  padding-right 9rem
 
 .lista-menu
   display inline-block
   height 40px
-  padding-top .6em
+  padding-top .6rem
   width auto
 
 
@@ -257,8 +264,9 @@ ul
   border none
   border-radius 6px
   font-family 'Roboto'
-  font-size 1.2em
-  margin-top 1em
+  font-size 1.2rem
+  margin-top 1rem
+  padding .6em 0 0 .6em
   outline 0
   width 90%
 
@@ -287,8 +295,15 @@ ul
 .parrafo-none
   display none
 
+.parrafo--trabajo
+  margin-bottom 0
+  padding-bottom 0
+
+.parrafo--trabajo__cursos
+  margin-top 0
+
 .header-plugin
-  margin-top 2em
+  margin-top 2rem
 
 .range
   width 75%
@@ -308,13 +323,13 @@ ul
 
 
 .text-habilidades
-  border-radius 6px
-  background #E0E0E0
+  border-radius 4px
+  background #ccc
   color blanco
   cursor pointer
   display inline-block
-  margin .2em 0
-  padding .4em
+  margin .2rem 0
+  padding .4rem
 
 .textos-header
   width 50%
@@ -325,19 +340,21 @@ ul
 .trabajo
   background-color blanco
   border-top 5px solid background
-  margin  3em 3em
-  padding 1em
+  margin  3rem 3rem
+  padding 1rem
   width 23%
 
 .que-hice
-  margin-top 2em
+  margin-top 2rem
   text-align center
 
 .web
   border 1px solid #a9a9a9
-  box-shadow 3px 3px 3px #a9a9a9
   height 250px
   width 400px
+
+.web:hover
+  box-shadow 0 0 1em grey
 
 @media screen and (max-width: 1600px)
   .conocimientos, .trabajo
@@ -348,10 +365,10 @@ ul
     width 38%
 
   .lista-itemUno
-    padding-right 7em
+    padding-right 7rem
 
   .textos-header
-    margin-left 2em
+    margin-left 2rem
 
 
 @media screen and (max-width: 1164px)
@@ -365,21 +382,22 @@ ul
     width 43%
 
   .header-yo
-    margin-top -.1em
+    margin-top -.1rem
 
-  .lista-itemUno
-    padding-right 5em
+  .lista-itremUno
+    padding-right 5rem
 
 
 @media screen and (max-width: 1024px)
     .conocimientos, .trabajo
       width 48%
-      margin 2em .3em
+      margin 2rem .3rem
 
 @media screen and (max-width: 985px)
   .habilidades
     -ms-flex-wrap wrap
     -webkit-flex-wrap wrap
+    flex-wrap wrap
 
   .cursos
     -webkit-flex-wrap wrap
@@ -391,21 +409,21 @@ ul
 
   .trabajo
     width 90%
-    margin 0 0 2em 0
+    margin 0 0 2rem 0
 
   .header
     height auto
 
   .lista
-    word-spacing 2em
+    word-spacing 2rem
 
-  .lista-itemUno
+  .lista-itremUno
     padding-right 0
 
 @media screen and (max-width: 660px)
   .lista
-    font-size .9em
-    word-spacing .4em
+    font-size .9rem
+    word-spacing .4rem
 
   .textos-header
     display block
@@ -416,7 +434,7 @@ ul
 
 @media screen and (max-width: 555px)
   .lista
-    word-spacing .1em
+    word-spacing .1rem
 
 @media screen and (max-width: 490px)
   form
@@ -425,14 +443,16 @@ ul
   .conocimientos
     width 95%
 
+  .image__contact
+    margin 0 .8em
 
   .input
     width 86%
 
   .lista
-    font-size .9em
+    font-size .9rem
     margin 0
-    padding .3em 0
+    padding .3rem 0
 
   .mensaje
     width 86%
@@ -442,15 +462,18 @@ ul
 
   .trabajo
     width 95%
-    margin 0 0 2em 0
+    margin 0 0 2rem 0
 
   .textos-header
-    padding-bottom .3em
+    padding-bottom .3rem
 
   .web
     width 93%
     height 130px
 
 @media screen and (max-width: 355px)
+  .icon-quill:before
+    font-size 1.8rem
+
   .last-juegos
     display block

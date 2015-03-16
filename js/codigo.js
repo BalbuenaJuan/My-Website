@@ -17,19 +17,19 @@ $(document).ready(function(){
   	});
 
 	$('#skills').click(function() {
-		$('#trabajo').animatescroll({scrollSpeed:'1000',easing:'easeInOutCubic'});
+		$('#trabajo').animatescroll({'scrollSpeed':'4000', 'easing':'easeInCubic'});
 	});
 
 	$('#proyecto').click(function() {
-		$('#proyectos').animatescroll({scrollSpeed:'1000',easing:'easeInOutCubic'});
+		$('#proyectos').animatescroll({'scrollSpeed':'4000', 'easing':'easeInCubic'});
 	});
 
 	$('#contact').click(function() {
-		$('#contacto').animatescroll({scrollSpeed:'1000',easing:'easeInOutCubic'});
+		$('#contacto').animatescroll({'scrollSpeed':'4000', 'easing':'easeInCubic'});
 	});
 
 	$('#education').click(function() {
-		$('#formacion').animatescroll({scrollSpeed:'1000',easing:'easeInOutCubic'});
+		$('#formacion').animatescroll({'scrollSpeed':'4000', 'easing':'easeInCubic'});
 	});
 
 	$('form').submit(function() {
@@ -44,8 +44,6 @@ $(document).ready(function(){
 	});// FIN DE CAMBIO DE TEXTO BOTON
     message.on("focusout", function(){
         if($(this).val() == ""){
-
-            for(var i = 0; i < message.length; i++){
                 message.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok1").remove();
@@ -56,24 +54,18 @@ $(document).ready(function(){
                 message.before('<p id="bad-message">! Mensaje incorrecto</p>');
                 $("#bad-message").css({"color": "red",
                     "margin-bottom": "0"});
-            }
         }
         else{
-            for(var i = 0; i < message.length; i++){
                 message.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel1").remove();
                 $("#ok1").remove();
                 message.after('<img id="ok1" src="img/redes/check.png" width="28" height="28">');
                 $("#bad-message").remove();
-
-            }
         }
     });
     email.on("focusout", function(){
         if($(this).val() == "" || $("#email").val().indexOf("@") == -1 || $("#email").val().indexOf(".") == -1){
-
-            for(var i = 0; i < email.length; i++){
                 email.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok2").remove();
@@ -84,11 +76,8 @@ $(document).ready(function(){
                 email.before('<p id="bad-email">! Email incorrecto</p>');
                 $("#bad-email").css({"color": "red",
                     "margin-bottom": "0"});
-            }
-
         }
         else{
-            for(var i = 0; i < email.length; i++){
                 email.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel2").remove();
@@ -96,13 +85,10 @@ $(document).ready(function(){
                 $("#bad-email").remove();
                 email.after('<img id="ok2" src="img/redes/check.png" width="28" height="28">');
                 $("#bad-email").remove();
-            }
         }
     });
     name.on("focusout", function(){
         if($(this).val() == ""){
-
-            for( var i = 0; i < name.length; i++){
                 name.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok3").remove();
@@ -113,18 +99,14 @@ $(document).ready(function(){
                 name.before('<p id="bad-name">! Nombre incorrecto </p>');
                 $("#bad-name").css({"color": "red",
                     "margin-bottom": "0"});
-
-            }
         }
         else{
-            for(var i = 0; i < name.length; i++){
                 name.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel3").remove();
                 $("#ok3").remove();
                 name.after('<img id="ok3" src="img/redes/check.png" width="28" height="28">');
                 $("#bad-name").remove();
-            }
         }
     });//FIN VALIDACIÓN VISUAL EMAIL
 
@@ -133,7 +115,7 @@ $(document).ready(function(){
 		$("#contador").html( this.value + "€");
 	});
 
-	var ids = ["#animacion", "#animacion2", "#animacion3", "#animacion4", "#animacion5", "#animacion6", "#animacion7"];
+	var ids = ["#animacion", "#animacion2", "#animacion3", "#animacion4", "#animacion5", "#animacion6", "#animacion7", "#animacion9", "#animacion10"];
 
 	function cerrarAnimaciones()
 	{
@@ -177,7 +159,16 @@ $(document).ready(function(){
     $("#balsamiq").click( function(){
         cerrarAnimaciones();
         $(ids[6]).show("slow");
-    });//FIN DE TOGGLE HABILIDADES]]
+    });
+    $("#less").click(function(){
+        cerrarAnimaciones();
+        $(ids[7]).show("slow");
+    })
+    $('#git').click(function () {
+        cerrarAnimaciones();
+        $(ids[8]).show("slow");
+    })
+    //FIN DE TOGGLE HABILIDADES]]
 
 	name.click( function(){
 		$("#email").show(600);

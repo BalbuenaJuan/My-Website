@@ -33,44 +33,42 @@
 .icon-check:before {
   content: "\f03a";
   color: #7de85e;
-  font-size: 1.15em;
+  font-size: 1.15rem;
 }
 .icon-mark-github:before {
   content: "\f00a";
-  font-size: 2em;
+  font-size: 2rem;
 }
 .icon-quill:before {
   content: "\e907";
-  font-size: 3em;
+  font-size: 3rem;
 }
 a {
   color: #000;
   text-decoration: none;
 }
-a:hover,
-a:focus {
-  color: #000;
+a:hover {
   text-decoration: none;
 }
 body {
   color: #606060;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', monospace;
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
 footer {
-  background: #2ba8f7;
+  background: #56737f;
   color: #fff;
   height: 200px;
   overflow: hidden;
 }
 form {
-  background: #424242;
+  background: #23637f;
   color: #fff;
-  margin: 2em auto;
+  margin: 2rem auto;
   max-width: 600px;
-  padding: 2em;
+  padding: 2rem;
 }
 li {
   list-style: none;
@@ -106,30 +104,33 @@ ul {
   color: #fff;
 }
 .blanco:hover {
-  oolor: #000;
+  oolor: #ffcb1f;
 }
 .blog {
   color: #fff;
+}
+.blog:hover {
+  color: #ffcb1f;
 }
 .contador {
   color: #fff;
 }
 .conocimientos {
   background-color: #fff;
-  border-top: 5px solid #2ba8f7;
-  margin: 3em 0;
-  padding: 1em;
+  border-top: 5px solid #56737f;
+  margin: 3rem 0;
+  padding: 1rem;
   width: 23%;
 }
 .cursos {
-  background: #acf0ff;
+  background: #abe5ff;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .font-light {
   font-weight: 300;
@@ -137,11 +138,11 @@ ul {
 .footer-subHeader {
   color: #fff;
   display: inline-block;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   text-align: center;
 }
 .habilidades {
-  background: #acf0ff;
+  background: #abe5ff;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -150,26 +151,26 @@ ul {
   justify-content: center;
 }
 .header {
-  background: #2ba8f7;
+  background: #56737f;
   color: #fff;
   height: auto;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .header-article-webs {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .header-educacion {
   text-align: center;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.5rem;
 }
 .header-Description {
   font-weight: 400;
-  line-height: 1.6em;
+  line-height: 1.3em;
 }
 .header-footer {
-  padding-top: 1.8em;
+  padding-top: 1.8rem;
   text-align: center;
 }
 .header-footer:after {
@@ -185,12 +186,12 @@ ul {
 .header-yo:before {
   content: "{ ";
   color: #ffcb1f;
-  font-size: 1.1em;
+  font-size: 2.1rem;
 }
 .header-yo:after {
   content: " }";
   color: #ffcb1f;
-  font-size: 1.1em;
+  font-size: 2.1rem;
 }
 .input {
   border: none;
@@ -198,8 +199,9 @@ ul {
   display: inline-block;
   height: 50px;
   font-family: 'Roboto';
-  font-size: 1.2em;
-  margin-top: 1em;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0 0 0 0.6em;
   outline: 0;
   width: 90%;
 }
@@ -212,19 +214,24 @@ ul {
   border-radius: 5px;
   color: #000;
   font-size: 18px;
-  margin: 1em auto;
-  padding: 0.5em;
+  margin: 1rem auto;
+  padding: 0.5rem;
   max-width: 150px;
 }
-.juegos:hover {
+.juegos:hover,
+.juegos:focus {
   font-size: 16px;
   height: -10%;
+  color: #000;
+}
+.juegos::active {
+  color: #000;
 }
 .lista {
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  word-spacing: 3em;
+  word-spacing: 3rem;
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -232,26 +239,27 @@ ul {
   width: 100%;
 display
 }
-.lista-itemUno {
-  padding-right: 9em;
+.lista-itremUno {
+  padding-right: 9rem;
 }
 .lista-menu {
   display: inline-block;
   height: 40px;
-  padding-top: 0.6em;
+  padding-top: 0.6rem;
   width: auto;
 }
 .mensaje {
   border: none;
   border-radius: 6px;
   font-family: 'Roboto';
-  font-size: 1.2em;
-  margin-top: 1em;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.6em 0 0 0.6em;
   outline: 0;
   width: 90%;
 }
 .menu-fijo {
-  background: #2ba8f7;
+  background: #56737f;
   color: #fff;
   height: 40px;
   margin: 0 auto;
@@ -275,8 +283,15 @@ display
 .parrafo-none {
   display: none;
 }
+.parrafo--trabajo {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.parrafo--trabajo__cursos {
+  margin-top: 0;
+}
 .header-plugin {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .range {
   width: 75%;
@@ -295,13 +310,13 @@ display
   background: #fff;
 }
 .text-habilidades {
-  border-radius: 6px;
-  background: #e0e0e0;
+  border-radius: 4px;
+  background: #ccc;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  margin: 0.2em 0;
-  padding: 0.4em;
+  margin: 0.2rem 0;
+  padding: 0.4rem;
 }
 .textos-header {
   width: 50%;
@@ -310,20 +325,22 @@ display
 }
 .trabajo {
   background-color: #fff;
-  border-top: 5px solid #2ba8f7;
-  margin: 3em 3em;
-  padding: 1em;
+  border-top: 5px solid #56737f;
+  margin: 3rem 3rem;
+  padding: 1rem;
   width: 23%;
 }
 .que-hice {
-  margin-top: 2em;
+  margin-top: 2rem;
   text-align: center;
 }
 .web {
   border: 1px solid #a9a9a9;
-  box-shadow: 3px 3px 3px #a9a9a9;
   height: 250px;
   width: 400px;
+}
+.web:hover {
+  box-shadow: 0 0 1em #808080;
 }
 @media screen and (max-width: 1600px) {
   .conocimientos,
@@ -337,10 +354,10 @@ display
     width: 38%;
   }
   .lista-itemUno {
-    padding-right: 7em;
+    padding-right: 7rem;
   }
   .textos-header {
-    margin-left: 2em;
+    margin-left: 2rem;
   }
 }
 @media screen and (max-width: 1164px) {
@@ -357,23 +374,24 @@ display
     width: 43%;
   }
   .header-yo {
-    margin-top: -0.1em;
+    margin-top: -0.1rem;
   }
-  .lista-itemUno {
-    padding-right: 5em;
+  .lista-itremUno {
+    padding-right: 5rem;
   }
 }
 @media screen and (max-width: 1024px) {
   .conocimientos,
   .trabajo {
     width: 48%;
-    margin: 2em 0.3em;
+    margin: 2rem 0.3rem;
   }
 }
 @media screen and (max-width: 985px) {
   .habilidades {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .cursos {
     -webkit-flex-wrap: wrap;
@@ -385,22 +403,22 @@ display
   }
   .trabajo {
     width: 90%;
-    margin: 0 0 2em 0;
+    margin: 0 0 2rem 0;
   }
   .header {
     height: auto;
   }
   .lista {
-    word-spacing: 2em;
+    word-spacing: 2rem;
   }
-  .lista-itemUno {
+  .lista-itremUno {
     padding-right: 0;
   }
 }
 @media screen and (max-width: 660px) {
   .lista {
-    font-size: 0.9em;
-    word-spacing: 0.4em;
+    font-size: 0.9rem;
+    word-spacing: 0.4rem;
   }
   .textos-header {
     display: block;
@@ -412,7 +430,7 @@ display
 }
 @media screen and (max-width: 555px) {
   .lista {
-    word-spacing: 0.1em;
+    word-spacing: 0.1rem;
   }
 }
 @media screen and (max-width: 490px) {
@@ -422,13 +440,16 @@ display
   .conocimientos {
     width: 95%;
   }
+  .image__contact {
+    margin: 0 0.8em;
+  }
   .input {
     width: 86%;
   }
   .lista {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 0;
-    padding: 0.3em 0;
+    padding: 0.3rem 0;
   }
   .mensaje {
     width: 86%;
@@ -438,10 +459,10 @@ display
   }
   .trabajo {
     width: 95%;
-    margin: 0 0 2em 0;
+    margin: 0 0 2rem 0;
   }
   .textos-header {
-    padding-bottom: 0.3em;
+    padding-bottom: 0.3rem;
   }
   .web {
     width: 93%;
@@ -449,6 +470,9 @@ display
   }
 }
 @media screen and (max-width: 355px) {
+  .icon-quill:before {
+    font-size: 1.8rem;
+  }
   .last-juegos {
     display: block;
   }
