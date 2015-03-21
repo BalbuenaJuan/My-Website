@@ -57,6 +57,9 @@ body {
   margin: 0;
   padding: 0;
 }
+figcaption {
+  text-align: center;
+}
 footer {
   background: #56737f;
   color: #fff;
@@ -207,6 +210,10 @@ ul {
 }
 .email {
   display: none;
+}
+.figure-web {
+  width: 350px;
+  display: inline-block;
 }
 .juegos {
   background: #ffcb1f;
