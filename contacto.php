@@ -1,4 +1,7 @@
 <?php
+
+if (isset($_POST[submit]) && $_POST[nombre] && $_POST[email]  && $_POST[range] != ""){
+
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
 $presupuesto = $_POST['range'];
@@ -21,7 +24,12 @@ mail($para, $asunto, utf8_decode($mensaje), $header);
 
 echo "<script type='text/javascript'>
     window.location.href='http://juanbalbuena.info';
-    var res = document.getElementById('respuesta');
-    res.textContent = 'Su mensaje se envió correctamente';
     </script>";
+}
+else{
+    echo "<script type='text/javascript'>
+            alert('Rellena correctamente el formulario :D ');
+            window.location.href='http://juanbalbuena.info';
+         </script>";
+}
 ?>
